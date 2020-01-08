@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>enter any number and calculate its square root</title>
+</head>
+<body>
+    <input type="number" id="givenValue">
+    <input type="button" value="Submit" id="btn">
+    <div id="result"></div>
+    <script>
+        var button = document.getElementById("btn");
+        button.addEventListener("click",
+        function square()
+        {
+            var value = document.getElementById("givenValue").value;
+            console.log(Math.sqrt(value));
+        }
+        )
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>enter two angles of a triangle and find the third angle</title>
+</head>
+<body>
+    <input type="number" id="firstAngle">
+    <input type="number" id="secondAngle">
+    <input type="button" value="Submit" id="btn">
+    <input type="text" id="result">
+    <script>
+            var button = document.getElementById("btn");
+            button.addEventListener("click",
+            function thirdAngle()
+            {
+                var fstValue = document.getElementById("firstAngle").value;
+                var sndValue = document.getElementById("secondAngle").value;
+                console.log(180-(parseInt(fstValue) + parseInt(sndValue)));
+                document.getElementById("result").value = (180-(parseInt(fstValue) + parseInt(sndValue)));
+            }
+            )
+    </script>
+</body>
+</html>

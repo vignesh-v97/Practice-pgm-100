@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>enter marks of five subjects and calculate total, average and
+        percentage</title>
+</head>
+<body>
+    <p>Enter Your English Mark:</p><input type="number" id="eng">
+    <p>Enter Your Tamil Mark:</p><input type="number" id="tam">
+    <p>Enter Your Maths Mark:</p><input type="number" id="mat">
+    <p>Enter Your Science Mark:</p><input type="number" id="sci">
+    <p>Enter Your Social Mark:</p><input type="number" id="soc">
+    <input type="submit" value="Submit" id="btn"><br>
+    <p>Total:</p><input type="number" id="tot"><br>
+    <p>Average:</p><input type="number" id="avg"><br>
+    <p>Percentage:</p><input type="number" id="per"><br>
+    <script>
+        var button = document.getElementById("btn");
+        button.addEventListener("click",
+        function marklist()
+        {
+            var english = parseInt(document.getElementById("eng").value);
+            var tamil = parseInt(document.getElementById("tam").value);
+            var maths = parseInt(document.getElementById("mat").value);
+            var science = parseInt(document.getElementById("sci").value);
+            var social = parseInt(document.getElementById("soc").value);
+            document.getElementById("tot").value = (english + tamil + maths + science + social);
+            var totalMarks = (english + tamil + maths + science + social);
+            document.getElementById("avg").value = (totalMarks/5);
+            document.getElementById("per").value = ((totalMarks/500)*100);
+        }
+        )
+    </script>
+
+
+
+
+
+</body>
+</html>

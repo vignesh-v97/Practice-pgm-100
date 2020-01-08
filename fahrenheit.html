@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>enter temperature in Celsius and convert it into Fahrenheit</title>
+</head>
+<body>
+    <script>
+        //fahrenheit = (celsius * 9 / 5) + 32
+        function celsius(c)
+        {
+            var result;
+            var Celsius = c;
+            var calculation = (Celsius * 9/5) + 32;
+            console.log(c+" Celcius = "+calculation+" Fahrenheit");
+            return calculation
+        }
+        celsius(100)
+    </script>
+</body>
+</html>

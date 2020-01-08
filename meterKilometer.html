@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>enter length in centimeter and convert it into meter and kilometer</title>
+</head>
+<body>
+    <script>
+    function centimeter(l)
+    {
+        var length = l;
+        var meter = length / 100;
+        var kilometer = length / 100000;
+        var centimeterProperty = {
+            meter:meter,
+            kilometer:kilometer
+        }
+        return centimeterProperty;
+    }
+    console.log(centimeter(1));
+    </script>
+</body>
+</html>
